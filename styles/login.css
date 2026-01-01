@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.login, .register {
+    background-image: url("../assets/bg-register.jpg");
+    background-attachment: fixed;
+    background-size: cover;
+    width: 100dvw;
+    height: 100dvh;
+}
+
+.login__logo h1 a,.register__logo h1 a{ 
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    gap: 5px;
+    padding: 15px;
+    color: rgb(236, 235, 235);
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+.login__container, .register__container {
+    background-color:rgb(42, 42, 42);
+    width: 95dvw;
+    height: 90dvh;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+form {
+    margin: 0;
+    padding: 0;
+    display: contents;   
+}
+
+
+.login__title, .register__title {
+    color: #f5f5f5;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+    margin-bottom: 30px;
+}
+
+.login__input-container, .register__input-container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.login__input, .register__input {
+    width: 100%;
+    max-width: 350px;
+    padding: 10px;
+    border: 3px solid #9f3647;
+    border-radius: 25px;
+    outline: none;
+    background-color: #333333;
+    color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+.login__input::placeholder, .register__input::placeholder{
+    color: rgb(136, 134, 134);
+    font-size: 1,2em;
+}
+
+.login__button-container, .register__button-container{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    margin-top: 50px;
+    overflow: hidden;
+}
+
+.login__button, .register__button{
+    font-size: 1em;
+    font-weight: bold;
+    color: #f5f5f5;
+    background: transparent;
+    border: none;
+}
+
+.login__button:first-child, .register__button:first-child {
+    background-color: #9f3647;
+    padding: 15px 40px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login__button:first-child:hover, .register__button:first-child:hover {
+    background-color: #f5f5f5;
+    color: #9f3647;
+}
+
+.login__button a, .register__button a{
+    text-decoration: none;
+    color: #f5f5f5;
+}
+
+label {
+    color: #f5f5f5;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+}
+
+
+
+
+            /* ANIMACIONES */
+
+@keyframes moveLogo{
+
+    from{
+        transform: rotate(-5deg);
+    }
+    to{
+        transform: rotate(5deg)
+    }
+}
+
+
+                    /* DESKTOP STYLE */
+
+@media screen and (min-width: 768px) {
+
+    .login__container{
+        width: 30dvw;
+        height: 80dvh;
+        margin: auto;
+        margin-top:20px;
+    }
+
+    .register__container{
+        width: 30dvw;
+        height: 80dvh;
+        margin: auto;
+        margin-top:20px;
+    }
+
+}
